@@ -1,0 +1,14 @@
+<div class = "margintop">
+  <h1>Formulario</h1>
+  <div class="well">
+    <fieldset>
+    <%= form_with model: @todo, local: true do |form| %>
+    <%= form.label :description, "To Do" %>
+    <%= form.text_field :description %>
+    <%= form.label :completed, "Contenido" %>
+    <%= form.text_field :completed %>
+    <%=form.submit "Crear" %>
+    <% end %>
+    </fieldset>
+  </div>
+</div>
